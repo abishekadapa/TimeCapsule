@@ -1,0 +1,23 @@
+CREATE TABLE USERS (id int NOT NULL, uname varchar2(10) NOT NULL,passwd varchar2(20) NOT NULL,cpass varchar2(20) NOT NULL,email varchar2(50) NOT NULL,dob varchar2(10) NOT NULL,phno number(10) NOT NULL,gender varchar2(10) NOT NULL,PRIMARY KEY (id));
+CREATE TABLE EVENTS(id int NOT NULL,user_id int REFERENCES USERS(id),title varchar2(20) NOT NULL,dat varchar2(10),cont varchar2(4000),PRIMARY KEY (id));
+
+create sequence id_for_users;
+create sequence id_for_events;
+
+create or replace TRIGGER trig_for_user
+  BEFORE INSERT ON USERS
+  FOR EACH ROW
+BEGIN
+  SELECT id_for_users.nextval
+  INTO :new.id
+  FROM dual;
+END;
+
+create or replace TRIGGER trig_for_event
+  BEFORE INSERT ON EVENTS
+  FOR EACH ROW
+BEGIN
+  SELECT id_for_events.nextval
+  INTO :new.id
+  FROM dual;
+END;

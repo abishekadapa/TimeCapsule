@@ -1,0 +1,8 @@
+Welcome to Time Capsule
+
+Usually many people have the art of maintaining Personal Diary. 
+A personal diary is a very deep hearted self talk, expressed in words , so that the person could have their own thoughts or feelings overview , anytime in future. 
+It’s like a personal journal where you can also record your personal things like your favourite thing, food, color, transaction details or favourite country that you are yearning to visit, or the first time you did something audacious. 
+But you should not let anyone read your diary since they can use it against you.
+This is a personal diary application which performs CRUD operations.
+It is available in Android,Website and Software.

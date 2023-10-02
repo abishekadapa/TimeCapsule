@@ -1,0 +1,16 @@
+Steps to be followed before executing project:
+
+    1.First create a database named timecapsule in phpmyadmin console (localhost\phpmyadmin) provided by Xampp(For more info about Xampp, refer Xamp_instructions.txt)
+
+    2.Create tables using the following queries:
+
+    For MySql
+        CREATE TABLE USERS (id int NOT NULL PRIMARY KEY AUTO_INCREMENT, uname varchar(10) NOT NULL,passwd varchar(20) NOT NULL,cpass varchar(20) NOT NULL,email varchar(50) NOT NULL,dob varchar(10) NOT NULL,phno int(10) NOT NULL,gender varchar(10) NOT NULL);
+        CREATE TABLE EVENTS(id int NOT NULL PRIMARY KEY AUTO_INCREMENT,user_id int NOT NULL ,title varchar(20) NOT NULL,dat varchar(10) NOT NULL,cont varchar(4000) NOT NULL,FOREIGN KEY (user_id) REFERENCES users(id));
+
+
+    3.Place the timecapsulev4 folder in eclipse workspace directory and load it using eclipse
+
+    4.Now run the project using eclipse!
+
+Thank you :)

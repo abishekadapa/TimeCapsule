@@ -1,0 +1,8 @@
+Steps to use XAMPP:
+  1.Download and Install XAMPP for your Operating System
+  2.Go to installed directory and run xampp-control.exe
+  3.Start Apache and MySQL servers for deployment.
+  4.Go to localhost/phymyadmin in browser to view your SQL Databases.
+  5.Execute needed queries.
+ 
+ Thank you :)
